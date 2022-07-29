@@ -5,11 +5,11 @@ namespace Envelope.ServiceBus.Visualizer;
 
 public class ExecutionPointerColor
 {
-	public ExecutionPointer ExecutionPointer { get; }
+	public IExecutionPointer ExecutionPointer { get; }
 	public GraphvizColor Color { get; }
 	public int Order { get; set; }
 
-	public ExecutionPointerColor(ExecutionPointer executionPointer)
+	public ExecutionPointerColor(IExecutionPointer executionPointer)
 	{
 		ExecutionPointer = executionPointer ?? throw new ArgumentNullException(nameof(executionPointer));
 
