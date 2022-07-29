@@ -26,7 +26,7 @@ public class OrchestrationGraphvizGenerator
 				executionPointer.Order = ++i;
 			}
 
-			_executionPointerColors = epc.GroupBy(x => x.ExecutionPointer.Step.IdStep).ToDictionary(x => x.Key, x => x.ToList());
+			_executionPointerColors = epc.GroupBy(x => x.ExecutionPointer.IdStep).ToDictionary(x => x.Key, x => x.ToList());
 		}
 		var graph = new AdjacencyGraph<Orchestrations.Graphing.Vertex, GraphEdge>();
 		var clusteredGraph = new ClusteredAdjacencyGraph<Orchestrations.Graphing.Vertex, GraphEdge>(graph);

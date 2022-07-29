@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
@@ -19,7 +19,7 @@
 		<Authors>Tomas Pilat</Authors>
 		<SignAssembly>true</SignAssembly>
 		<AssemblyOriginatorKeyFile>..\..\Envelope.snk</AssemblyOriginatorKeyFile>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -35,13 +35,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Envelope.ServiceBus" Version="1.0.1" />
+		<PackageReference Include="Envelope.ServiceBus" Version="1.0.8" />
 		<PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.2.32">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="QuikGraph" Version="2.3.0" />
-		<PackageReference Include="QuikGraph.Graphviz" Version="2.3.1" />
+		<PackageReference Include="QuikGraph" Version="2.5.0" />
+		<PackageReference Include="QuikGraph.Graphviz" Version="2.5.0" />
 	</ItemGroup>
 
 </Project>
